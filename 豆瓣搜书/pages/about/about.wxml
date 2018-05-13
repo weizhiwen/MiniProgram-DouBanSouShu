@@ -1,0 +1,32 @@
+<!--pages/about/about.wxml-->
+<view class='about'>
+  <view class='title'>豆瓣搜书</view>
+  <view class='content'>一款快捷搜书的小程序。</view>
+  <view class='title'>作者</view>
+  <view class='content'>Wizey</view>
+  <view class='title'>相关帐号</view>
+  <view class='account'>
+    <image src='../../images/blog.png'/>博客：
+    <view class='content'><text selectable='true'>http://wenshixin.gitee.io/blog/</text></view>
+  </view>
+  <view class='account'>
+    <image src='../../images/github.png'/>GitHub：
+    <view class='content'><text selectable='true'>https://github.com/weizhiwen/</text></view>
+  </view>
+  <view class='account'>
+    <image src='../../images/gitee.png'/>码云：
+    <view class='content'><text selectable='true'>https://gitee.com/wenshixin/</text></view>
+  </view>
+  <view class='account'>
+    <image src='../../images/jianshu.png'/>简书：
+    <view class='content'><text selectable='true'>https://www.jianshu.com/u/76a6e8741afd/</text></view>
+  </view>
+  <view class='account'>
+    <image src='../../images/bilibili.png'/>bilibili：
+    <view class='content'><text selectable='true'>https://space.bilibili.com/210455832/</text></view>
+  </view>
+  <view class='account'>
+    <image src='../../images/email.png'/>邮箱：
+    <view class='content' selectable='true'><text>763107756@qq.com</text></view>
+  </view>
+</view>

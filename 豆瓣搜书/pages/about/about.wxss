@@ -1,0 +1,25 @@
+/* pages/about/about.wxss */
+
+.about {
+  padding: 20rpx;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.content {
+  margin: 10rpx 0 10rpx 10rpx;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.account{
+  margin-top: 15rpx;
+  word-break:break-all; 
+}
+
+.account image{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 10rpx;
+}

@@ -1,0 +1,43 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <view class='cover'>
+    <image src='{{book.images.small}}' mode='widthFix'></image>
+  </view>
+  <view class='info'>
+    <view class='left'>
+      <view><text class='title'>{{book.title}}</text></view>
+      <view>
+        <text class='small'>作者：{{book.author}}</text>
+      </view>
+      <view>
+        <text class='small'>出版社：{{book.publisher}}</text>
+      </view>
+      <view>
+        <text class='small'>出版时间：{{book.pubdate}}</text>
+      </view>
+    </view>
+    <view class='right'>
+      <view class='small center'>豆瓣评分</view>
+      <view class='big center'>{{book.rating.average}}</view>
+      <view class='small center'>{{book.rating.numRaters}}</view>
+    </view>
+  </view>
+  <view class='introduce' wx:if='{{hasBookIntroduce}}'>
+    <view class='title'>图书简介</view>
+    <view class='content'><text selectable='true'>{{book.summary}}</text></view>
+  </view>
+  <view style='color:gray' wx:else>抱歉，暂无本书图书简介</view>
+  <view class='introduce' wx:if='{{hasAuthorIntroduce}}'>
+    <view class='title'>作者简介</view>
+    <view class='content'><text selectable='true'>{{book.author_intro}}</text></view>
+  </view>
+  <view style='color:gray' wx:else>抱歉，暂无本书作者简介</view>
+  <view class='introduce' wx:if='{{hasCatalog}}'>
+    <view class='title'>目录</view>
+    <view class='content'>
+      <text style='word-break:break-all;' selectable='true'>{{book.catalog}}</text>
+    </view>
+  </view>
+  <view style='color:gray' wx:else>抱歉，暂无本书目录</view>
+</view>
+

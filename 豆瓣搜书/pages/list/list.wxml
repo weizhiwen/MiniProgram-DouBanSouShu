@@ -1,0 +1,17 @@
+<!--list.wxml-->
+ <view class='result'>共搜索到 {{total}} 本相关书籍</view>
+<view wx:for='{{books}}' wx:for-index='id' wx:key="{{book.viewid}}" wx:for-item='book'>
+  <view class='book' bindtap='toDetail' data-id='{{id}}'>
+    <image src='{{book.images.small}}' mode='widthFix'></image>
+    <view class='content'>
+      <view class='name'>{{book.title}}</view>
+      <view class='description'>{{book.author}}/{{book.pubdate}}{{book.publisher}}</view>
+      <view class='price'>价格：{{book.price}}</view>
+    </view>
+  </view>
+</view>
+<view class='button'>
+  <button bindtap='prePage' wx:if='{{start != 0}}'>上一页</button>
+  <button bindtap='nextPage' wx:if='{{(start + count) < total}}'>下一页</button>
+</view>
+

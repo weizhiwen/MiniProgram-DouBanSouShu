@@ -1,0 +1,48 @@
+/* list.wxss */
+
+.result {
+  margin: 20rpx 20rpx;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  padding: 30rpx;
+  border-top: 2rpx solid gray;
+  word-break:break-all; 
+}
+
+.book .content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.book .content .name{
+  font-size: 1.2rem;
+}
+
+.book .content .description{
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.book image {
+  width: 150rpx;
+  border-radius: 5rpx;
+}
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx;
+}
+
+.button button{
+  width: 80%;
+  opacity: 0.6;
+  background-color: #666666;
+}

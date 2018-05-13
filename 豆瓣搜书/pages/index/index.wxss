@@ -1,0 +1,75 @@
+/* pages/search/search.wxss */
+page{
+  height: 100%;
+}
+
+.index {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  background-image: url("http://ompezbwwe.bkt.clouddn.com/search1.jpg"); 
+  background-repeat: no-repeat;
+  background-size:100% 100%; 
+  color: white;
+}
+
+.search form {
+  display: flex;
+  width: 100%;
+}
+
+.title {
+  padding-top: 7rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  padding-top: 1rem;
+}
+
+.search .input{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.search .input-search {
+  background-color: white;
+  height: 2.5rem;
+  min-height: 2.5rem; 
+  line-height: 2.5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+  color: black;
+}
+
+.search .btn-search {
+  height: 2.5rem; 
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #666666;
+}
+
+.search .btn-search::after {
+    border-radius: 0;
+}
+
+.search .icon-search {
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.footer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
+}

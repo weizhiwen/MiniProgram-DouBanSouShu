@@ -1,0 +1,14 @@
+<view class='feedback'>
+  <form class='form' bindsubmit='formSubmit'>
+    <view class='name'>
+      <input class='input-name' name='name' type='text' placeholder='给自己起个响亮的名字吧' placeholder-style='color:grey' value='{{name}}' focus/>
+    </view>
+    <view class='textarea'>
+      <view class='view-textarea'>
+        <textarea class='textarea-feedback' name='feedback' placeholder='我要给开发者反馈和建议' placeholder-style='color:grey' bindinput='bindTextAreaChange' maxlength='255' value='{{feedback}}'/>
+      </view>
+      <view class="wordNumber"><text>{{noteNowLen}}/{{noteMaxLen}}</text></view>
+    </view>
+     <button formType="submit" class='btn-submit'>提交反馈</button>
+  </form>
+</view>

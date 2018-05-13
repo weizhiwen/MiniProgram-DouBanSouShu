@@ -1,0 +1,13 @@
+<!-- 搜索页面 -->
+<view class="index">
+  <view class='title center'>豆瓣搜书</view>
+  <view class='search'>
+    <form class='center' bindsubmit="formSubmit" bindreset="formReset">
+       <view class='input'>
+        <input class='input-search' type='text' name="bookname" placeholder='输入图书名称' placeholder-style='color:grey' confirm-type='search' focus='true'/>
+        <button bindtap='search' class='btn-search' form-type='submit'><icon class='icon-search' type="search" size="24"/></button>
+       </view>
+    </form>
+  </view>
+  <view class='footer center'>DouBan API，Wizey Make。</view> 
+</view>
